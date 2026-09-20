@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/manrope.woff2") format("woff2");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --navy: #071b2c;
+  --navy-light: #0d2940;
+  --solar-blue: #176b9c;
+  --white: #fff;
+  --off-white: #f5f7f8;
+  --text-dark: #0b1e2d;
+  --text-muted: #667580;
+  --solar-gold: #efbf55;
+  --line: #dce2e6;
+  --font: "Manrope", Arial, Helvetica, sans-serif;
+}
