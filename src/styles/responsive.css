@@ -1,3 +1,11 @@
+/* Royal Solar — Responsive Styles
+   Calm red and blue brand palette.
+*/
+
+/* =========================
+   LARGE SCREENS
+========================= */
+
 @media (min-width: 1600px) {
   .hero-content {
     grid-template-columns: 1fr 1fr;
@@ -12,6 +20,10 @@
     font-size: 82px;
   }
 }
+
+/* =========================
+   LAPTOPS
+========================= */
 
 @media (max-width: 1200px) {
   .container {
@@ -79,12 +91,16 @@
   }
 }
 
+/* =========================
+   TABLETS & SMALL LAPTOPS
+========================= */
+
 @media (max-width: 1100px) {
   .menu-toggle {
     display: flex;
     align-items: center;
     gap: 14px;
-    background: none;
+    background: transparent;
     border: 0;
     color: #ffffff;
     font-size: 13px;
@@ -117,7 +133,7 @@
   .header nav.is-open > a {
     font-size: 22px;
     padding: 13px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(220, 227, 237, 0.12);
   }
 
   .header nav.is-open > .nav-quote {
@@ -211,9 +227,13 @@
   }
 
   .footer-top > div:last-child {
-    grid-column: 1/-1;
+    grid-column: 1 / -1;
   }
 }
+
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 767px) {
   html {
@@ -613,7 +633,7 @@
   }
 
   .footer-top > div:first-child {
-    grid-column: 1/-1;
+    grid-column: 1 / -1;
   }
 
   .footer-top > div:last-child {
@@ -631,7 +651,7 @@
   }
 
   /* =========================
-     DIALOG
+     PROJECT DIALOG
   ========================= */
 
   .dialog-content {
@@ -689,7 +709,7 @@
   }
 
   .footer-top > div:last-child {
-    grid-column: 1/-1;
+    grid-column: 1 / -1;
   }
 }
 
@@ -703,8 +723,8 @@
   }
 
   *,
-  *:before,
-  *:after {
+  *::before,
+  *::after {
     animation: none !important;
     transition: none !important;
   }
@@ -809,7 +829,7 @@
   .profile-facts > div:nth-child(3) {
     padding: 0 0 22px;
     border: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(220, 227, 237, 0.15);
   }
 
   .profile-facts strong {
@@ -846,3 +866,4 @@
     font-size: 12px;
   }
 }
+  

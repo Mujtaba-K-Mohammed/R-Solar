@@ -7,38 +7,32 @@
 }
 
 :root {
-  /* =========================
-     ROYAL VOLTAGE BRAND PALETTE
-     Calm / Premium Treatment
-  ========================= */
-
   /* Deep backgrounds */
   --navy: #182938;
   --navy-light: #243b4d;
 
-  /* Muted Royal Blue */
+  /* Royal Blue */
   --solar-blue: #6b82bd;
+  --blue-soft: #e9eef8;
+  --blue-light: #aab8df;
+
+  /* Strong Royal Red */
+  --solar-gold: #d71920;
+  --red-light: #e57373;
+  --red-soft: #fbe9e9;
 
   /* Neutral backgrounds */
   --white: #ffffff;
   --off-white: #f7f9fb;
+  --page-background: #f7f8fc;
 
   /* Typography */
   --text-dark: #263542;
   --text-muted: #71808c;
 
-  /*
-    Legacy variable name kept so existing
-    components do not need to be changed.
-
-    This is now a calm muted Royal Red,
-    not gold.
-  */
-  --solar-gold: #cf7772;
-
   /* Borders */
   --line: #dde4e9;
 
-  /* Typography */
+  /* Font */
   --font: "Manrope", Arial, Helvetica, sans-serif;
 }
