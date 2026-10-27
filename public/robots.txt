@@ -1,3 +1,5 @@
+
 User-agent: *
 Allow: /
-# Add Sitemap: https://your-verified-domain/sitemap.xml at launch.
+
+Sitemap: https://royal-solar.vercel.app/sitemap.xml

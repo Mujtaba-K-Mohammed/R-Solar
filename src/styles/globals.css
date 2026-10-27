@@ -1528,3 +1528,263 @@ footer {
 .energy-section .energy-line * {
   stroke: var(--solar-gold) !important;
 }
+/* =========================
+   GOODWE PARTNERSHIP
+========================= */
+
+.goodwe-section .gw-partnership {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: stretch;
+  margin: 0 0 56px;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-top: 4px solid #d71920;
+  border-radius: 16px;
+}
+
+.goodwe-section .gw-partnership-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  padding: 16px;
+  background: #edf1f5;
+}
+
+.goodwe-section .gw-partnership-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 640px;
+  object-fit: contain;
+}
+
+.goodwe-section .gw-partnership-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  min-width: 0;
+  padding: clamp(24px, 4vw, 56px);
+}
+
+.goodwe-section .gw-partnership-copy .eyebrow {
+  margin: 0;
+  color: #d71920;
+}
+
+.goodwe-section .gw-partnership-copy h3 {
+  font-size: clamp(28px, 3.3vw, 46px);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+  color: var(--text-dark);
+}
+
+.goodwe-section .gw-partnership-copy > p:not(.eyebrow) {
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.goodwe-section .gw-partnership-copy .text-link {
+  flex-wrap: wrap;
+}
+
+/* =========================
+   GOODWE PRODUCT CARDS
+========================= */
+
+.goodwe-section .product-family {
+  display: flex;
+  flex-direction: column;
+}
+
+.goodwe-section .product-copy {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.goodwe-section .product-copy > p {
+  min-height: 0;
+  margin-bottom: 24px;
+}
+
+.goodwe-section .product-copy .text-link {
+  margin-top: auto;
+}
+
+.goodwe-section .product-photo {
+  flex-shrink: 0;
+}
+
+.goodwe-section .product-copy h3 {
+  line-height: 1.25;
+}
+
+/* =========================
+   ADDITIONAL PRODUCT PHOTOS
+========================= */
+
+.goodwe-section .gw-showcase {
+  margin-top: 72px;
+}
+
+.goodwe-section .gw-showcase-heading {
+  max-width: 700px;
+  margin-bottom: 32px;
+}
+
+.goodwe-section .gw-showcase-heading .eyebrow {
+  margin-bottom: 14px;
+  color: #d71920;
+}
+
+.goodwe-section .gw-showcase-heading h3 {
+  margin-bottom: 18px;
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+.goodwe-section .gw-showcase-heading > p:not(.eyebrow) {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.goodwe-section .gw-showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.goodwe-section .gw-showcase-card {
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.goodwe-section .gw-showcase-card:hover {
+  border-color: #d71920;
+  box-shadow: 0 12px 30px #1829380d;
+}
+
+.goodwe-section .gw-showcase-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 390px;
+  padding: 12px;
+  background: #f2f5f8;
+}
+
+.goodwe-section .gw-showcase-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.goodwe-section .gw-showcase-card figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 20px;
+  border-top: 1px solid var(--line);
+}
+
+.goodwe-section .gw-showcase-card figcaption > span {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.goodwe-section .gw-showcase-card .text-link {
+  gap: 8px;
+  font-size: 10px;
+}
+
+.goodwe-section .gw-showcase-image:focus-visible,
+.goodwe-section .gw-partnership-image:focus-visible {
+  outline: 3px solid #d71920;
+  outline-offset: -5px;
+}
+
+/* =========================
+   GOODWE RESPONSIVE LAYOUT
+========================= */
+
+@media (max-width: 1100px) {
+  .goodwe-section .products-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .goodwe-section .gw-showcase-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .goodwe-section .section-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .goodwe-section .gw-partnership {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .goodwe-section .gw-partnership-copy {
+    padding: 28px;
+  }
+
+  .goodwe-section .gw-partnership-image img {
+    max-height: 560px;
+  }
+}
+
+@media (max-width: 540px) {
+  .goodwe-section > .container {
+    width: calc(100% - 32px);
+  }
+
+  .goodwe-section .products-grid,
+  .goodwe-section .gw-showcase-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .goodwe-section .gw-showcase-image {
+    height: 420px;
+  }
+
+  .goodwe-section .product-photo {
+    height: 280px;
+  }
+
+  .goodwe-section .gw-partnership-copy {
+    padding: 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .goodwe-section .product-family,
+  .goodwe-section .gw-showcase-card {
+    transition: none;
+  }
+
+  .goodwe-section .product-family:hover {
+    transform: none;
+  }
+}
